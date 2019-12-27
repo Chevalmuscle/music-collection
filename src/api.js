@@ -5,4 +5,8 @@ const fetchAlbums = function() {
   return axios.get(`${configs.BACKEND_URL}/albums`).then(res => res.data);
 };
 
-export { fetchAlbums };
+const fetchAlbum = function(id) {
+  return axios.get(`${configs.BACKEND_URL}/albums/${id}`).then(res => res.data);
+};
+
+export { fetchAlbums, fetchAlbum };
