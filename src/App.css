@@ -1,0 +1,47 @@
+.album-covers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album {
+  position: relative;
+  display: inline-block;
+  margin: 5px 5px 0 5px;
+}
+
+.album img {
+  width: 100%;
+}
+
+.album:hover .album-info-wrap {
+  visibility: visible;
+  opacity: 1;
+}
+
+.album-info-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.album-info {
+  position: absolute;
+  bottom: 5%;
+}
+
+.album-title {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.see-album-page {
+  color:inherit
+}
