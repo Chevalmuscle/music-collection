@@ -16,25 +16,25 @@ export default class Albums extends React.Component {
 
   render() {
     return (
-      <div class="album-covers">
+      <div className="album-covers">
         {this.state.albums.map((album, index) => (
-          <div key={index} class="album">
+          <div key={index} className="album">
             <img
               src={album.cover}
               alt={album.title}
               width="300"
               height="300"
             ></img>
-            <div class="album-info-wrap">
-              <div class="album-info">
-                <div class="album-title">{album.title}</div>
+            <div className="album-info-wrap">
+              <div className="album-info">
+                <div className="album-title">{album.title}</div>
                 <div>
                   {album.artists[0]} - {album.year}
                 </div>
 
                 <div>{album.genre}</div>
                 <div>
-                  <a class="see-album-page" href={`/albums/${album._id}`}>
+                  <a className="see-album-page" href={`/albums/${album._id}`}>
                     more
                   </a>
                 </div>
