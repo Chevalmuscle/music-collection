@@ -29,7 +29,7 @@ export default class Album extends React.Component {
             Artists:
             <ul>
               {album.artists.map((artist, index) => (
-                <li key={index}>{artist}</li>
+                <li key={index}><a href={`/artists/${artist}`}>{artist}</a></li>
               ))}
             </ul>
           </div>
