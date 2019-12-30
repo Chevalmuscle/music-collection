@@ -4,7 +4,14 @@ export default class Album extends React.Component {
   render() {
     return (
       <div>
-        <a href="/albums">album collection</a>
+        <ul>
+          <li>
+            <a href="/albums">album collection</a>
+          </li>
+          <li>
+            <a href="/artists">artists</a>
+          </li>
+        </ul>
       </div>
     );
   }
