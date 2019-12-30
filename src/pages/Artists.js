@@ -19,14 +19,7 @@ export default class Artists extends React.Component {
         <ul>
           {this.state.artists.map((artist, artistIndex) => (
             <li key={artistIndex}>
-              <div>{artist.artist}</div>
-              <ul>
-                {artist.albums.map((album, albumIndex) => (
-                  <li key={albumIndex}>
-                    <a href={`/albums/${album._id.$oid}`}>{album.title}</a>
-                  </li>
-                ))}
-              </ul>
+              <a href={`/artists/${artist}`}>{artist}</a>
             </li>
           ))}
         </ul>
