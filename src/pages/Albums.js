@@ -5,13 +5,23 @@ import "./Albums.css";
 export default class Albums extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      albums: [],
-    };
+    if (props.albums === undefined) {
+      this.state = {
+        albums: [],
+        needsToFetchAlbums: true,
+      };
+    } else {
+      this.state = {
+        albums: props.albums,
+        needsToFetchAlbums: false,
+      };
+    }
   }
 
   componentDidMount() {
-    fetchAlbums().then(albums => this.setState({ albums }));
+    if (this.state.needsToFetchAlbums) {
+      fetchAlbums().then(albums => this.setState({ albums }));
+    }
   }
 
   render() {
@@ -34,7 +44,10 @@ export default class Albums extends React.Component {
 
                 <div>{album.genre}</div>
                 <div>
-                  <a className="see-album-page" href={`/albums/${album._id.$oid}`}>
+                  <a
+                    className="see-album-page"
+                    href={`/albums/${album._id.$oid}`}
+                  >
                     more
                   </a>
                 </div>

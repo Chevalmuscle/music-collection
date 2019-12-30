@@ -1,6 +1,8 @@
 import React from "react";
 import { fetchArtistByName } from "../api";
 
+import AlbumsPage from "./Albums";
+
 export default class Artist extends React.Component {
   constructor(props) {
     super(props);
@@ -23,6 +25,7 @@ export default class Artist extends React.Component {
       return (
         <div>
           <h1>{artist.name}</h1>
+          <AlbumsPage albums={artist.albums} />
         </div>
       );
     }
