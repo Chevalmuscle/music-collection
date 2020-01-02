@@ -46,7 +46,7 @@ export default class Albums extends React.Component {
                 <div>
                   <a
                     className="see-album-page"
-                    href={`/albums/${album._id.$oid}`}
+                    href={`/albums/${album._id}`}
                   >
                     more
                   </a>
