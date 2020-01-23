@@ -23,6 +23,7 @@ export default class Album extends React.Component {
       return (
         <div>
           <img src={album.cover} alt={album.title}></img>
+          <div>Order: {album.order}</div>
           <div>Title: {album.title}</div>
           <div>Year: {album.year}</div>
           <div>

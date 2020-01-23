@@ -36,6 +36,7 @@ export default class Albums extends React.Component {
               height="300"
             ></img>
             <div className="album-info-wrap">
+              <div className="album-order">{album.order}</div>
               <div className="album-info">
                 <div className="album-title">{album.title}</div>
                 <div>
@@ -44,10 +45,7 @@ export default class Albums extends React.Component {
 
                 <div>{album.genre}</div>
                 <div>
-                  <a
-                    className="see-album-page"
-                    href={`/albums/${album._id}`}
-                  >
+                  <a className="see-album-page" href={`/albums/${album._id}`}>
                     more
                   </a>
                 </div>
