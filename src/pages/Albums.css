@@ -45,3 +45,9 @@
 .see-album-page {
   color:inherit
 }
+
+.album-order {
+  right: 0;
+  position: absolute;
+  padding: 5px;
+}
