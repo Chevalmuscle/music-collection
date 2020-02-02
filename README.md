@@ -1,3 +1,6 @@
 # Music Collection
 
-Displays a music collection from a mongo db
+❗️ Design in progress
+
+Displays a music library sorted by albums or by artists
+
