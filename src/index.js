@@ -5,10 +5,10 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 import App from "./App";
-import Albums from "./pages/Albums";
-import Album from "./pages/Album";
-import Artists from "./pages/Artists";
-import Artist from "./pages/Artist";
+import Albums from "./Components/Albums";
+import Album from "./Components/Album";
+import Artists from "./Components/Artists";
+import Artist from "./Components/Artist";
 
 const routing = (
   <Router>
