@@ -1,0 +1,46 @@
+.container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 42px;
+  background-color: #242424;
+}
+
+.navbar-item-container{
+  background-color: rgba(255, 255, 255, 50);
+  width: 230px;
+  
+  padding: 10px 60px;
+  /*background: none;*/
+	color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.navbar-item-info{
+  position: relative;
+  height: 50%;
+  vertical-align: middle;
+}
+
+.navbar-item-info > *{
+  padding: 0 5px 0 5px;
+}
+
+.navbar-item-icon{
+  top: 1px;
+  height: 20px;
+}
+
+.navbar-item-text{
+  vertical-align: bottom;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #9E9E9E;
+}
